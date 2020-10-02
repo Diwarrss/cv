@@ -1,0 +1,29 @@
+{
+    "title": "Diego Vargas | CV | Developer",
+    "name": "diegovargas-freelancer",
+    "version": "5.0.4",
+    "scripts": {
+        "start": "gulp watch"
+    },
+    "description": "Desarrollador Full Stack - Diego Vargas",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "nuxtjs",
+        "vuejs"
+    ],
+    "homepage": "https://www.gridsoft.co/",
+    "license": "MIT",
+    "author": "Diego Vargas",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Diwarrss/cv.git"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-sass": "^4.1.0",
+        "node-sass": "^4.14.1"
+    }
+}
