@@ -29,9 +29,11 @@
     <article class="resume-wrapper text-center position-relative" id="app">
 	    <div class="resume-wrapper-inner mx-auto text-left bg-white shadow-lg">
 		    <header class="resume-header pt-4 pt-md-0">
-			    <div class="media flex-column flex-md-row">
-				    <img class="mr-3 img-fluid picture mx-auto" src="assets/images/profile.jpg" alt="">
-				    <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+			    <div class="media flex-column flex-md-row align-items-center">
+				    <div class="img-profile">
+						<img class="mr-3 img-fluid picture mx-auto" src="assets/images/profile.jpg" alt="Diego Vargas">
+					</div>
+				    <div class="media-body d-flex flex-column flex-md-row mx-auto mx-lg-0 pr-4">
 					    <div class="primary-info">
 						    <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">Diego Alejandro Vargas Rodriguez</h1>
 						    <div class="name mb-3">Ingeniero de Sistemas</div>
@@ -42,7 +44,7 @@
 					    </div><!--//primary-info-->
 					    <div class="secondary-info ml-md-auto my-auto">
 						    <ul class="resume-social list-unstyled">
-				                <li class="mb-3"><a href="https://www.linkedin.com/in/diego-vargas-develop/"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/diegovargas</a></li>
+				                <li class="mb-3"><a href="https://www.linkedin.com/in/diego-vargas-develop/"><span class="fa-container text-center mr-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com</a></li>
 				                <li class="mb-3"><a href="https://github.com/Diwarrss"><span class="fa-container text-center mr-2"><i class="fab fa-github-alt fa-fw"></i></span>github.com/Diwarrs</a></li>
 				                <!-- <li class="mb-3"><a href="#"><span class="fa-container text-center mr-2"><i class="fab fa-codepen fa-fw"></i></span>codepen.io/username/</a></li> -->
 				                <li><a href="https://diego.cv.gridsoft.co/"><span class="fa-container text-center mr-2"><i class="fas fa-globe"></i></span>diego.cv.gridsoft.co</a></li>
@@ -68,16 +70,79 @@
 						    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Experiencia Laboral</h2>
 						    <div class="resume-section-content">
 							    <div class="resume-timeline position-relative">
-									<article class="resume-timeline-item position-relative pb-5">
-									    
+								    <article class="resume-timeline-item position-relative pb-5">									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Desarrollador Full Stack</h3>
+										        <div class="resume-company-name ml-auto"><a href="https://www.soho.cl/" target="_blank">Soho Chile. Com S.A</a></div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">Noviembre 2019 - Actualidad | {{ calculateTime('2019/11/01') }}</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+											<ul>
+												<li>Desarrollo de aplicaciones web con Vuejs ( Nuxt.js ).</li>
+												<li>Desarrollo de API Rest con Laravel.</li>
+												<li>Desarrollo de paginas web con Wordpress</li>
+											</ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Tecnologías Usadas:</h4>
+										    <ul class="list-inline">
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Php</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Laravel</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Vuejs</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">NuxtJs</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Wordpress</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+
+								    </article><!--//resume-timeline-item-->
+									<article class="resume-timeline-item position-relative pb-5">									    
+									    <div class="resume-timeline-item-header mb-2">
+										    <div class="d-flex flex-column flex-md-row">
+										        <h3 class="resume-position-title font-weight-bold mb-1">Back End Developer - Freelancer</h3>
+										        <div class="resume-company-name ml-auto">
+													<a href="https://app.manzanaverde.la/" target="_blank">Manzana verde</a>
+												</div>
+										    </div><!--//row-->
+										    <div class="resume-position-time">Octubre 2021 - Noviembre 2021 | {{ calculateTime('2021/10/01','2021/11/30') }}</div>
+									    </div><!--//resume-timeline-item-header-->
+									    <div class="resume-timeline-item-desc">
+											<ul>
+												<li>Modificación del software para corregir errores, mejorar su rendimiento.</li>
+												<li>Desarrollo de API Rest con Laravel.</li>
+											</ul>
+										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Tecnologías Usadas:</h4>
+										    <ul class="list-inline">
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Php</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Laravel</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Vuejs</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Vue CLI</span></li>
+												<li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
+											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
+										    </ul>
+									    </div><!--//resume-timeline-item-desc-->
+								    </article><!--//resume-timeline-item-->
+								    <article class="resume-timeline-item position-relative pb-5">									    
 									    <div class="resume-timeline-item-header mb-2">
 										    <div class="d-flex flex-column flex-md-row">
 										        <h3 class="resume-position-title font-weight-bold mb-1">Team Lead</h3>
 										        <div class="resume-company-name ml-auto"><a href="https://www.soho.cl/" target="_blank">Soho Chile. Com S.A</a></div>
 										    </div><!--//row-->
-										    <div class="resume-position-time">Junio 2021 - Actualidad | {{ calculateTime('2021/06/01') }}</div>
+										    <div class="resume-position-time">Junio 2021 - Octubre 2021 | {{ calculateTime('2021/06/01', '2021/10/01') }}</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
+											<ul>
+												<li>Investigar, diseñar, administrar programas de software</li>
+												<li>Probar y evaluar nuevos programas</li>
+												<li>Modificación del software para corregir errores, mejorar su rendimiento.</li>
+												<li>Implementación de herramientas, procesos y métricas de software</li>
+												<li>Dirección de programación de software y desarrollo de documentación.</li>
+												<li>Escribir e implementar código</li>
+												<li>Elaboración de informes sobre la programación de especificaciones, actividades o estado del proyecto.</li>
+												<li>Consultar con personal de ingeniería para evaluar interfaces software-hardware y desarrollar especificaciones y requisitos de desempeño.</li>
+											</ul>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Tecnologías Usadas:</h4>
 										    <ul class="list-inline">
 											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Laravel</span></li>
@@ -93,42 +158,6 @@
 									    </div><!--//resume-timeline-item-desc-->
 
 								    </article>
-								    <article class="resume-timeline-item position-relative pb-5">
-									    
-									    <div class="resume-timeline-item-header mb-2">
-										    <div class="d-flex flex-column flex-md-row">
-										        <h3 class="resume-position-title font-weight-bold mb-1">Desarrollador Full Stack</h3>
-										        <div class="resume-company-name ml-auto"><a href="https://www.soho.cl/" target="_blank">Soho Chile. Com S.A</a></div>
-										    </div><!--//row-->
-										    <div class="resume-position-time">Noviembre 2019 - Actualidad | {{ calculateTime('2019/11/01') }}</div>
-									    </div><!--//resume-timeline-item-header-->
-									    <div class="resume-timeline-item-desc">
-										    <!-- <ul>
-												<li>Desarrollo de actividades .</li>
-										    </ul> -->
-										    <!-- <h4 class="resume-timeline-item-desc-heading font-weight-bold">Logros:</h4>
-										    <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-										    <ul>
-											    <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-											    <li>At vero eos et accusamus et iusto odio dignissimos.</li>
-											    <li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
-											    <li>Maecenas tempus tellus eget.</li>
-										    </ul> -->
-										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Tecnologías Usadas:</h4>
-										    <ul class="list-inline">
-												<li class="list-inline-item"><span class="badge badge-primary badge-pill">Php</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Laravel</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Vuejs</span></li>
-												<li class="list-inline-item"><span class="badge badge-primary badge-pill">NuxtJs</span></li>
-												<li class="list-inline-item"><span class="badge badge-primary badge-pill">JavaScript</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">jQuery</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">HTML/SASS</span></li>
-											    <li class="list-inline-item"><span class="badge badge-primary badge-pill">Wordpress</span></li>
-										    </ul>
-									    </div><!--//resume-timeline-item-desc-->
-
-								    </article><!--//resume-timeline-item-->
-								    
 								    <article class="resume-timeline-item position-relative pb-5">
 									    
 									    <div class="resume-timeline-item-header mb-2">
@@ -407,11 +436,11 @@
 								        <!-- <div class="resume-award-name">Award Name Lorem</div> -->
 								        <div class="resume-award-desc">Lida Fabiola Castro Pinzón, Ingeniera de Sistemas, San Gil (Santander). Contacto: +57 301 770 3907</div>
 								    </li>
-								    <!-- <li class="mb-0 pl-4 position-relative">
+								    <li class="mb-2 pl-4 position-relative">
 								        <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-								        <div class="resume-award-name">Award Name Ipsum</div>
-								        <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque.</div>
-								    </li> -->
+								        <!-- <div class="resume-award-name">Award Name Lorem</div> -->
+								        <div class="resume-award-desc">Ignacio Zitare, Project Manager Remoto. Contacto: +34 623 03 61 46</div>
+								    </li>
 							    </ul>
 						    </div>
 					    </section><!--//interests-section-->

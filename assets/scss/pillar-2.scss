@@ -80,7 +80,8 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 	color: rgba(256, 256, 256, 0.9);
 	height: 220px;
 	.picture {
-		width: 220px;
+		width: 256px;
+		object-fit: cover;
 	}
 		
 	.name {
@@ -255,6 +256,7 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 	.resume-header .picture {
 		width: 120px;
 		@include border-radius(4px);
+		object-fit: cover;
 	}
 
 	

@@ -9696,9 +9696,15 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-header .picture {
-  width: 220px;
+  width: 256px;
+	object-fit: contain;
+  height: 220px;
 }
-
+.img-profile .picture {
+  width: 256px;
+	object-fit: contain;
+  height: 220px;
+}
 .resume-header .name {
   font-size: 22px;
   letter-spacing: 0.175rem;
@@ -9857,7 +9863,8 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
     height: auto;
   }
   .resume-header .picture {
-    width: 120px;
     border-radius: 4px;
+    width: 256px;
+		object-fit: cover;
   }
 }
